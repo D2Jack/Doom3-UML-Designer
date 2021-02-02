@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vz9SwFpvEeu7NaYVZWj7TA" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_9ZXW0GVXEeuRjKJ6DUfSPw" name="Actor" visibility="public">
+    <ownedAttribute xmi:id="_6DhVAGVaEeuRjKJ6DUfSPw" name="team" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Dh8EGVaEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Dh8EWVaEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9CtqAGVaEeuRjKJ6DUfSPw" name="rank" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9CtqAWVaEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9CtqAmVaEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_-n4RAGVaEeuRjKJ6DUfSPw" name="viewAxis" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-n44EGVaEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-n44EWVaEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_AnNrgGVbEeuRjKJ6DUfSPw" name="enemyNode" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AnOSkGVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AnOSkWVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_CNXxAGVbEeuRjKJ6DUfSPw" name="enemyList" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CNYYEGVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CNYYEWVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_B4zrsGVaEeuRjKJ6DUfSPw" name="Save"/>
+    <ownedOperation xmi:id="_ENK7AGVaEeuRjKJ6DUfSPw" name="Restore"/>
+    <ownedOperation xmi:id="_GmdGkGVaEeuRjKJ6DUfSPw" name="Restart"/>
+    <ownedOperation xmi:id="_IL_hAGVaEeuRjKJ6DUfSPw" name="Spawn"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AioN0GVYEeuRjKJ6DUfSPw" name="Player" visibility="public">
+    <generalization xmi:id="_N34XsGVYEeuRjKJ6DUfSPw" general="_9ZXW0GVXEeuRjKJ6DUfSPw"/>
+    <ownedAttribute xmi:id="_q9JdsGVYEeuRjKJ6DUfSPw" name="maxHealth" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q9JdsWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q9JdsmVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_r2v_MGVYEeuRjKJ6DUfSPw" name="weapons" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r2v_MWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r2v_MmVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zRTsQGVYEeuRjKJ6DUfSPw" name="powerups" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zRTsQWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zRTsQmVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1AACsGVYEeuRjKJ6DUfSPw" name="armor" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1AApwGVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1AApwWVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2tCMQGVYEeuRjKJ6DUfSPw" name="maxarmor" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2tCMQWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2tCMQmVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3hrVQGVYEeuRjKJ6DUfSPw" name="ammo[ AMMO_NUMTYPES ]" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3hrVQWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3hrVQmVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6rtBQGVYEeuRjKJ6DUfSPw" name="clip[ MAX_WEAPONS ]" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6rtBQWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6rtoUGVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9IQjQGVYEeuRjKJ6DUfSPw" name="powerupEndTime[ MAX_POWERUPS ]" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9IQjQWVYEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9IQjQmVYEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GW_ZIGVYEeuRjKJ6DUfSPw" name="weapon" visibility="public">
+    <generalization xmi:id="_NQiD0GVYEeuRjKJ6DUfSPw"/>
+    <generalization xmi:id="_WEmSwGVeEeuRjKJ6DUfSPw" general="_AioN0GVYEeuRjKJ6DUfSPw"/>
+    <ownedOperation xmi:id="_ZTRVkGVbEeuRjKJ6DUfSPw" name="WEAPON_ATTACK" visibility="private"/>
+    <ownedOperation xmi:id="_bRc5gGVbEeuRjKJ6DUfSPw" name="WEAPON_RELOAD" visibility="private"/>
+    <ownedOperation xmi:id="_c7RXAGVbEeuRjKJ6DUfSPw" name="WEAPON_NETRELOAD" visibility="private"/>
+    <ownedOperation xmi:id="_gBVJAGVbEeuRjKJ6DUfSPw" name="WEAPON_NETENDRELOAD" visibility="private"/>
+    <ownedOperation xmi:id="_hiTMgGVbEeuRjKJ6DUfSPw" name="WEAPON_NETFIRING" visibility="private"/>
+    <ownedOperation xmi:id="_jJ0j8GVbEeuRjKJ6DUfSPw" name="WEAPON_RAISEWEAPON" visibility="private"/>
+    <ownedOperation xmi:id="_k1O84GVbEeuRjKJ6DUfSPw" name="WEAPON_LOWERWEAPON" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IVuWsGVYEeuRjKJ6DUfSPw" name="projectile" visibility="public">
+    <generalization xmi:id="_M7b9kGVYEeuRjKJ6DUfSPw" general="_GW_ZIGVYEeuRjKJ6DUfSPw"/>
+    <ownedOperation xmi:id="_40gSQGVcEeuRjKJ6DUfSPw" name="AddDefaultDamageEffect" visibility="private"/>
+    <ownedOperation xmi:id="_6sNawGVcEeuRjKJ6DUfSPw" name="Event_Explode" visibility="private"/>
+    <ownedOperation xmi:id="_86HcwGVcEeuRjKJ6DUfSPw" name="Event_Fizzle" visibility="private"/>
+    <ownedOperation xmi:id="_RLHQwGVdEeuRjKJ6DUfSPw" name="Event_RadiusDamage" visibility="private"/>
+    <ownedOperation xmi:id="_SoyvsGVdEeuRjKJ6DUfSPw" name="Event_Touch" visibility="private"/>
+    <ownedOperation xmi:id="_fGOgwGVdEeuRjKJ6DUfSPw" name="Event_GetProjectileState" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nJxyYGVbEeuRjKJ6DUfSPw" name="ammo" visibility="public">
+    <generalization xmi:id="_p-hx8GVbEeuRjKJ6DUfSPw" general="_GW_ZIGVYEeuRjKJ6DUfSPw"/>
+    <ownedAttribute xmi:id="_s8PgQGVbEeuRjKJ6DUfSPw" name="GetAmmoNumForName" visibility="public" isStatic="true">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s8PgQWVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s8PgQmVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zgmlIGVbEeuRjKJ6DUfSPw" name="GetAmmoNameForNum" visibility="public" isStatic="true">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zgmlIWVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zgmlImVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_27QHEGVbEeuRjKJ6DUfSPw" name="GetAmmoPickupNameForNum" visibility="public" isStatic="true">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_27QuIGVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_27QuIWVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5cFFEGVbEeuRjKJ6DUfSPw" name="GetAmmoType" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5cFFEWVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5cFFEmVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_70bcgGVbEeuRjKJ6DUfSPw" name="AmmoAvailable" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_70bcgWVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_70cDkGVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9PSQ8GVbEeuRjKJ6DUfSPw" name="AmmoInClip" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9PS4AGVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9PS4AWVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_-k9qcGVbEeuRjKJ6DUfSPw" name="ResetAmmoClip" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-k-RgGVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-k-RgWVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="___0e4GVbEeuRjKJ6DUfSPw" name="ClipSize" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="___0e4WVbEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="___0e4mVbEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_BPjBYGVcEeuRjKJ6DUfSPw" name="LowAmmo" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BPjBYWVcEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BPjocGVcEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Clh84GVcEeuRjKJ6DUfSPw" name="AmmoRequired" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Clh84WVcEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Clij8GVcEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bfjfkGVeEeuRjKJ6DUfSPw" name="physics" visibility="public">
+    <generalization xmi:id="_ct2esGVeEeuRjKJ6DUfSPw" general="_AioN0GVYEeuRjKJ6DUfSPw"/>
+    <ownedAttribute xmi:id="_D6OiIGVgEeuRjKJ6DUfSPw" name="walkSpeed" visibility="private">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D6OiIWVgEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D6OiImVgEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FgANIGVgEeuRjKJ6DUfSPw" name="crouchSpeed" visibility="private">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FgANIWVgEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FgANImVgEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HGx9sGVgEeuRjKJ6DUfSPw" name="maxStepHeight" visibility="private">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HGx9sWVgEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HGykwGVgEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JFP1gGVgEeuRjKJ6DUfSPw" name="maxJumpHeight" visibility="private">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JFQckGVgEeuRjKJ6DUfSPw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JFQckWVgEeuRjKJ6DUfSPw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_zZn2kGVfEeuRjKJ6DUfSPw" name="SetSpeed"/>
+    <ownedOperation xmi:id="_1E-lIGVfEeuRjKJ6DUfSPw" name="SetMaxStepHeight"/>
+    <ownedOperation xmi:id="_3qJ3oGVfEeuRjKJ6DUfSPw" name="GetMaxStepHeight"/>
+    <ownedOperation xmi:id="_48hecGVfEeuRjKJ6DUfSPw" name="SetMaxJumpHeight"/>
+    <ownedOperation xmi:id="_5_61IGVfEeuRjKJ6DUfSPw" name="SetMovementType"/>
+    <ownedOperation xmi:id="_7geo8GVfEeuRjKJ6DUfSPw" name="SetPlayerInput"/>
+    <ownedOperation xmi:id="_87P90GVfEeuRjKJ6DUfSPw" name="SetKnockBack"/>
+    <ownedOperation xmi:id="_-Qq4oGVfEeuRjKJ6DUfSPw" name="SetDebugLevel"/>
+    <ownedOperation xmi:id="_L5Cy0GVgEeuRjKJ6DUfSPw" name="debugLevel" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_f3eiEGVeEeuRjKJ6DUfSPw" name="playerview" visibility="public">
+    <generalization xmi:id="_hnLlIGVeEeuRjKJ6DUfSPw" general="_AioN0GVYEeuRjKJ6DUfSPw"/>
+    <ownedOperation xmi:id="__lWCAGVeEeuRjKJ6DUfSPw" name="SetPlayerEntity"/>
+    <ownedOperation xmi:id="_BTNSAGVfEeuRjKJ6DUfSPw" name="ClearEffects"/>
+    <ownedOperation xmi:id="_Cx5dkGVfEeuRjKJ6DUfSPw" name="DamageImpulse"/>
+    <ownedOperation xmi:id="_D6caAGVfEeuRjKJ6DUfSPw" name="WeaponFireFeedback"/>
+    <ownedOperation xmi:id="_GEOxAGVfEeuRjKJ6DUfSPw" name="AngleOffset"/>
+    <ownedOperation xmi:id="_PZKgEGVfEeuRjKJ6DUfSPw" name="ShakeAxis"/>
+    <ownedOperation xmi:id="_REMegGVfEeuRjKJ6DUfSPw" name="CalculateShake"/>
+    <ownedOperation xmi:id="_Tp6jkGVfEeuRjKJ6DUfSPw" name="RenderPlayerView" visibility="public"/>
+    <ownedOperation xmi:id="_VUaWgGVfEeuRjKJ6DUfSPw" name="Fade" visibility="public"/>
+    <ownedOperation xmi:id="_Wn9pEGVfEeuRjKJ6DUfSPw" name="Flash" visibility="public"/>
+    <ownedOperation xmi:id="_X9_n4GVfEeuRjKJ6DUfSPw" name="AddBloodSpray" visibility="public"/>
+    <ownedOperation xmi:id="_bgdpEGVfEeuRjKJ6DUfSPw" name="EnableBFGVision"/>
+    <ownedOperation xmi:id="_jqxYEGVfEeuRjKJ6DUfSPw" name="SingleView" visibility="private"/>
+    <ownedOperation xmi:id="_l2isEGVfEeuRjKJ6DUfSPw" name="DoubleVision" visibility="private"/>
+    <ownedOperation xmi:id="_nnAkIGVfEeuRjKJ6DUfSPw" name="BerserkVision" visibility="private"/>
+    <ownedOperation xmi:id="_o71CAGVfEeuRjKJ6DUfSPw" name="InfluenceVision" visibility="private"/>
+    <ownedOperation xmi:id="_qpihAGVfEeuRjKJ6DUfSPw" name="ScreenFade" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UPywcGViEeuRjKJ6DUfSPw" name="entity" visibility="public">
+    <generalization xmi:id="_XO_sgGViEeuRjKJ6DUfSPw" general="_bfjfkGVeEeuRjKJ6DUfSPw"/>
+    <ownedOperation xmi:id="_frnTgGViEeuRjKJ6DUfSPw" name="SetPhysics" visibility="public"/>
+    <ownedOperation xmi:id="_jMFJkGViEeuRjKJ6DUfSPw" name="GetPhysics"/>
+    <ownedOperation xmi:id="_kamyMGViEeuRjKJ6DUfSPw" name="RestorePhysics"/>
+    <ownedOperation xmi:id="_mfs2cGViEeuRjKJ6DUfSPw" name="RunPhysics"/>
+    <ownedOperation xmi:id="_nxRMAGViEeuRjKJ6DUfSPw" name="SetOrigin"/>
+    <ownedOperation xmi:id="_pAh0cGViEeuRjKJ6DUfSPw" name="SetAxis"/>
+    <ownedOperation xmi:id="_qD8ZQGViEeuRjKJ6DUfSPw" name="SetAngles"/>
+    <ownedOperation xmi:id="_rJoO8GViEeuRjKJ6DUfSPw" name="GetFloorPos"/>
+    <ownedOperation xmi:id="_sYbkYGViEeuRjKJ6DUfSPw" name="GetPhysicsToVisualTransform"/>
+    <ownedOperation xmi:id="_tvcaoGViEeuRjKJ6DUfSPw" name="GetPhysicsToSoundTransform"/>
+    <ownedOperation xmi:id="_vu0RYGViEeuRjKJ6DUfSPw" name="Collide"/>
+    <ownedOperation xmi:id="_yPqdgGViEeuRjKJ6DUfSPw" name="GetImpactInfo"/>
+    <ownedOperation xmi:id="_0RJNEGViEeuRjKJ6DUfSPw" name="ApplyImpulse"/>
+    <ownedOperation xmi:id="_1v5DAGViEeuRjKJ6DUfSPw" name="AddForce"/>
+    <ownedOperation xmi:id="_3oNPgGViEeuRjKJ6DUfSPw" name="ActivatePhysics"/>
+    <ownedOperation xmi:id="_41Q4gGViEeuRjKJ6DUfSPw" name="IsAtRest"/>
+    <ownedOperation xmi:id="_54yyEGViEeuRjKJ6DUfSPw" name="GetRestStartTime"/>
+    <ownedOperation xmi:id="_7Fa9QGViEeuRjKJ6DUfSPw" name="AddContactEntity"/>
+    <ownedOperation xmi:id="_8W2I4GViEeuRjKJ6DUfSPw" name="RemoveContactEntity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4gDoEGVjEeuRjKJ6DUfSPw" name="Doors" visibility="public">
+    <generalization xmi:id="_O0EcsGVkEeuRjKJ6DUfSPw" general="_UPywcGViEeuRjKJ6DUfSPw"/>
+    <ownedOperation xmi:id="_rUCdQGVkEeuRjKJ6DUfSPw" name="GetDoor" visibility="private"/>
+    <ownedOperation xmi:id="_uh78oGVkEeuRjKJ6DUfSPw" name="Think" visibility="private"/>
+    <ownedOperation xmi:id="_vrflsGVkEeuRjKJ6DUfSPw" name="OpenInnerDoor" visibility="private"/>
+    <ownedOperation xmi:id="_wyRnkGVkEeuRjKJ6DUfSPw" name="OpenFloorDoor" visibility="private"/>
+    <ownedOperation xmi:id="_x4vgYGVkEeuRjKJ6DUfSPw" name="CloseAllDoors" visibility="private"/>
+    <ownedOperation xmi:id="_zFDigGVkEeuRjKJ6DUfSPw" name="DisableAllDoors" visibility="private"/>
+    <ownedOperation xmi:id="_0ggM0GVkEeuRjKJ6DUfSPw" name="EnableProperDoors" visibility="private"/>
+    <ownedOperation xmi:id="_21qGUGVkEeuRjKJ6DUfSPw" name="Event_TeamBlocked" visibility="private"/>
+    <ownedOperation xmi:id="_4XAkUGVkEeuRjKJ6DUfSPw" name="Event_Activate" visibility="private"/>
+    <ownedOperation xmi:id="_5ZCpEGVkEeuRjKJ6DUfSPw" name="Event_PostFloorArrival" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7qw0EGVkEeuRjKJ6DUfSPw" name="Enemy AI" visibility="public">
+    <generalization xmi:id="_efEggGVlEeuRjKJ6DUfSPw" general="_9ZXW0GVXEeuRjKJ6DUfSPw"/>
+    <ownedOperation xmi:id="_9sT1EGVkEeuRjKJ6DUfSPw" name="ClearEnemy"/>
+    <ownedOperation xmi:id="_IjQJcGVlEeuRjKJ6DUfSPw" name="EnemyPositionValid"/>
+    <ownedOperation xmi:id="_NHnFcGVlEeuRjKJ6DUfSPw" name="SetEnemyPosition"/>
+    <ownedOperation xmi:id="_PSiE4GVlEeuRjKJ6DUfSPw" name="UpdateEnemyPosition"/>
+    <ownedOperation xmi:id="_bEpoEGVlEeuRjKJ6DUfSPw" name="SetEnemy"/>
+  </packagedElement>
+</uml:Model>
